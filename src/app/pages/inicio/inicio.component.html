@@ -1,0 +1,18 @@
+<p>inicio works!</p>
+<form [formGroup]="formContacto" (ngSubmit)="showData()">
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" name="" id="" formControlName="nombre">
+    </div>
+
+    <app-form-direccion></app-form-direccion>
+
+    <div>
+        <input type="submit" value="Mostrar">
+    </div>
+</form>
+
+
+<div>
+    <button type="button" (click)="colocar()">Colocar</button>
+</div>
